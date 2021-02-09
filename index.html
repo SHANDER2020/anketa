@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Формы. День II</title>
+</head>
+<body>
+	<form action="#" enctype="multipart/form-data" method="get">
+		<div>
+			<h1>Мини-форма</h1>
+		</div>
+		<div>
+			<p>1. Выберите ваши любимые цвета:</p>
+			<p><input type="checkbox" name="blue" tabindex="1" value="yes">Синий</p>
+			<p><input type="checkbox" name="yellow" tabindex="1" value="yes">Желтый</p>
+			<p><input type="checkbox" name="black" tabindex="1" value="yes">Черный</p>
+		</div>
+		<div>
+			<p>2. Выберите свой пол:</p>
+			<p><input type="radio" name="gender" value="male" tabindex="2">Мужчина</p>
+			<p><input type="radio" name="gender" value="female" tabindex="2">Девушка</p>
+		</div>
+		<div>
+			<p>3. Выберите страну в которой вы проживаете:</p>
+			<select name="country" tabindex="3">
+				<option value="ukraine">Украина</option>
+				<option value="belarus">Беларусь</option>
+				<option value="israel">Израиль</option>
+				<option value="litva">Литва</option>
+			</select>
+		</div>
+		<div>
+			<p>4. Загрузите лицевую и заднюю сторону своего паспорта:</p>
+			<p><input type="file" name="passport" value="photo_passport" tabindex="4"></p>
+
+		</div>
+		<div>
+			<p>5. Укажите свой контактный номер телефона:</p>
+			<p><input type="text" name="tel" maxlength="13" pattern="[0-9]" placeholder="+380xxxxxxxxx" tabindex="5"></p>
+		</div>
+		<div>
+			<input type="submit" value="Готово" tabindex="6">
+			<input type="reset" value="Сбросить" tabindex="6">
+		</div>
+	</form>
+</body>
+</html>
